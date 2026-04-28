@@ -11,10 +11,7 @@ import { logger } from './middleware/logger.middleware.js';
 const app = express();
 
 app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'https://rede-solidaria-three.vercel.app'
-  ],
+  origin: true,
   credentials: true
 }));
 

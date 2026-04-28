@@ -13,7 +13,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://rede-solidaria-nine.vercel.app/'
+    'https://rede-solidaria-nine.vercel.app'
   ],
   credentials: true
 }));
@@ -42,6 +42,6 @@ app.use((req, res) => {
 
 app.use(errorHandler);
 
-app.listen(3000, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });

@@ -13,7 +13,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://rede-solidaria-nine.vercel.app'
+    'https://rede-solidaria-three.vercel.app'
   ],
   credentials: true
 }));
